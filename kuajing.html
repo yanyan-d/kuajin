@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 12px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .info-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+        }
+
+        .info-list li {
+            font-size: 15px;
+            color: #333;
+        }
+
+        .content {
+            font-size: 15px;
+            color: #333;
+            padding-left: 14px;
+        }
+
+        .item {
+            margin-bottom: 12px;
+        }
+
+        .item .date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .item strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 20px;
+            }
+
+            .info-list {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="title">个人简历</div>
+
+        <!-- 基本信息 -->
+        <div class="section">
+            <h2>基本信息</h2>
+            <ul class="info-list">
+                <li>姓名：张三</li>
+                <li>性别：男</li>
+                <li>年龄：24</li>
+                <li>电话：13800138000</li>
+                <li>邮箱：zhangsan@xxx.com</li>
+                <li>地址：北京市朝阳区</li>
+            </ul>
+        </div>
+
+        <!-- 求职意向 -->
+        <div class="section">
+            <h2>求职意向</h2>
+            <div class="content">
+                求职岗位：前端开发工程师 / Web前端<br>
+                期望薪资：10K-15K<br>
+                到岗时间：可立即到岗
+            </div>
+        </div>
+
+        <!-- 专业技能 -->
+        <div class="section">
+            <h2>专业技能</h2>
+            <div class="content">
+                • 熟练使用 HTML5 + CSS3 + JavaScript 开发页面<br>
+                • 掌握 Vue2 / Vue3 基础语法与组件开发<br>
+                • 能独立完成响应式网页、移动端页面开发<br>
+                • 了解 Git 版本控制、浏览器调试工具使用<br>
+                • 有良好的代码规范与页面还原能力
+            </div>
+        </div>
+
+        <!-- 工作经历 -->
+        <div class="section">
+            <h2>工作经历</h2>
+            <div class="content">
+                <div class="item">
+                    <strong>XX科技有限公司</strong> <span class="date">2023.07 - 至今</span><br>
+                    担任前端开发实习生，参与公司官网、后台管理系统页面开发，配合后端完成接口联调。
+                </div>
+            </div>
+        </div>
+
+        <!-- 教育经历 -->
+        <div class="section">
+            <h2>教育经历</h2>
+            <div class="content">
+                <div class="item">
+                    <strong>XX职业技术学院</strong> <span class="date">2020.09 - 2023.06</span><br>
+                    计算机应用技术专业 | 大专
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 -->
+        <div class="section">
+            <h2>项目经历</h2>
+            <div class="content">
+                <div class="item">
+                    <strong>个人作品集网站</strong><br>
+                    使用 HTML + CSS + JS 开发，包含响应式布局、动画效果，用于展示个人作品与简历。
+                </div>
+                <div class="item">
+                    <strong>企业官网仿制</strong><br>
+                    还原设计稿，实现轮播图、导航、表单等功能，兼容多端显示。
+                </div>
+            </div>
+        </div>
+
+        <!-- 自我评价 -->
+        <div class="section">
+            <h2>自我评价</h2>
+            <div class="content">
+                热爱前端开发，学习能力强，做事认真负责，有良好的沟通能力与团队意识。
+                喜欢钻研新技术，能快速适应工作需求，希望在前端领域持续成长。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
